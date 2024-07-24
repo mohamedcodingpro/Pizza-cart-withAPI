@@ -1,10 +1,33 @@
-body {
+  body {
     font-family: 'Times New Roman', Times, serif;
-    /* background-color: #3498db; */
-   
+    background-color: #f5f5f5;
+    margin: 0;
+    padding: 0;
+    display:grid;
+    flex-direction: column;
+    min-height: 100vh;
+    /* background-color: #f0f0f0; */
+     
 }
-.main
-
+header, .header {
+    text-align: center;
+    margin-bottom: 10px;
+    padding: 20px;
+    background-color: #333333;
+    color: #fff;
+    border-radius: 10px;
+}
+.wrapper {
+    margin: 20px;
+    padding: 20px;
+    border: 2px solid #333333;
+    border-radius: 10px;
+    background-color: #ffffff;
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content:space-around;
+}
 input {
     outline: none;
     border: none;
@@ -12,7 +35,7 @@ input {
 
 main {
     height: 100vh;
-    max-width: 1500px;
+    /* max-width: 1500px; */
     margin: 0 auto;
 }
 
@@ -54,9 +77,9 @@ main {
 .largePizza,
 .mediumPizza{
     border-radius: 8px;
-    padding: 0 10px;
-
+    padding: 20px;
     justify-content: center;
+    
     
 }
 
@@ -312,4 +335,31 @@ table, th, td {
   .close-button:hover {
     text-decoration: underline;
   }
-  
+  footer {
+    background-color: #333333;
+    color: #ffffff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.center.contact.pizza.contact_us {
+    margin: 0 auto;
+    width:fit-content;
+}
+
+footer h2 {
+    margin-bottom: 20px;
+}
+
+footer p {
+    margin: 5px 0;
+}
+
+footer a {
+    color: #ff6347; /* Tomato color */
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

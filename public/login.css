@@ -1,70 +1,76 @@
-.box button{
-    margin: 0 auto;
+body {
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #87d5f6;
 }
 
-.container{
-    width: 100%;
+.container1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    
-    
 }
-.box{
-    background-color: rgba(215, 144, 13, 0.5);
-    position: absolute;
-    min-width: 300px;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50% , -50%);
-    padding: 25px 25px 45px 25px;
-    border-radius: 20px;
+
+.box {
+    background-color: #fff;
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 400px;
+    width: 100%;
 }
-.login-header{
+
+.login-header {
     text-align: center;
-    font-size: 44px;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+.input_box {
+    position: relative;
     margin-bottom: 30px;
-    position: relative;
 }
 
-.box .input_box{
+.input_box input {
     width: 100%;
-    position: relative;
-}
-.box .input_box input{
-    width: 100%;
-    font-size: 26px;
-    margin: 16px 0px;
+    padding: 10px 10px 10px 0;
+    border: none;
+    border-bottom: 2px solid #ccc;
     outline: none;
-    border-width: 0px 0px 2px 0px;
-    border-bottom: solid;
-}
-.box .input_box label{
-    position: absolute;
-    left: 0;
-    top: 12px;
-    font-size: 26px;
-    color: #000000;
-    pointer-events: none;
-    transition: 0.2s;
-}
-.box .input_box input:focus + label,
-.box .input_box input:valid + label{
-    top: -7px;
-    font-size: 18px;
-    color: black;
+    background: transparent;
+    font-size: 16px;
 }
 
-.box .login_button{
-        width: 60%;
-        color: white;
-        padding: 5px 20px;
-        background-color: rgb(8, 1, 1);
-        border-color: rgb(205, 205, 220);
-        color:rgb(135, 206, 235);
-        font-weight: bold;
-        border-radius: 10px;
-        
-   
+.input_box label {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #aaa;
+    transition: 0.3s;
 }
-.box .login_button:hover{
-    border-color: rgb(0, 0, 0);
-   }
+
+.input_box input:focus + label,
+.input_box input:valid + label {
+    top: -20px;
+    left: 0;
+    color: #3498db;
+    font-size: 12px;
+}
+
+.login_button {
+    width: 100%;
+    padding: 10px;
+    background-color: #3498db;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.login_button:hover {
+    background-color: #2980b9;
+}
