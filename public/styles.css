@@ -162,7 +162,12 @@ body.loaded .preloader {
 }
 
 .pizza-info {
-    text-align: center;
+    text-align: justify;
+
+    img {
+        width: 20%;
+        height: auto;
+      }
 }
 
 .pizza-size {
